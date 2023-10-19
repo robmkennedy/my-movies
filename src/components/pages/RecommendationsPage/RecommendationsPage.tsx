@@ -1,18 +1,39 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from 'components/pages/PageTitle/PageTitle';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useTranslation } from 'react-i18next';
+import { useHistoryItemsSelector } from 'hooks/selectorHooks';
+import { getMostOccurrences } from 'utils/helpers';
+import RecommendationChart from 'components/common/RecommendationChart/RecommendationChart';
 
 const RecommendationsPage = () => {
 
     const { t } = useTranslation();
 
+    const historyObj = useHistoryItemsSelector();
+
+    let actorArrays: string[][] = []; // An array of actor arrays
+    let genreArrays: string[][] = []; // An array of genre arrays
+
+    Object.values(historyObj).forEach((movie) => {
+        actorArrays.push(movie.actors);
+        genreArrays.push(movie.genre);
+    });
+
+    const actorOccurrencesMap = getMostOccurrences(actorArrays);
+    const genreOccurrencesMap = getMostOccurrences(genreArrays);
+
     return (
-        <div id='reviewsPage'>
+        <div id='recommendationsPage'>
             <Container>
                 <Row>
                     <Col>
                         <PageTitle title={t('page.recommendations.title')} />
-                        <div></div>
+                        <RecommendationChart title={t('page.recommendations.actor.title')}
+                            description={t('page.recommendations.actor.description')}
+                            occurrencesMap={actorOccurrencesMap} />
+                        <RecommendationChart title={t('page.recommendations.genre.title')}
+                            description={t('page.recommendations.genre.description')}
+                            occurrencesMap={genreOccurrencesMap} />
                     </Col>
                 </Row>
             </Container>

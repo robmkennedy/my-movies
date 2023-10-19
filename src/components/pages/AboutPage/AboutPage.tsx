@@ -1,17 +1,17 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from 'components/pages/PageTitle/PageTitle';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useTranslation } from 'react-i18next';
 
-const HomePage = () => {
+const AboutPage = () => {
 
     const { t } = useTranslation();
 
     return (
-        <div id='homePage'>
+        <div id='aboutPage'>
             <Container>
                 <Row>
                     <Col>
-                        <PageTitle title={t('page.home.title')} />
+                        <PageTitle title={t('page.about.title')} />
                         <div></div>
                     </Col>
                 </Row>
@@ -20,4 +20,4 @@ const HomePage = () => {
     );
 }
 
-export default HomePage;
+export default AboutPage;

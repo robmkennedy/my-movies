@@ -1,7 +1,24 @@
 {
     "app.title": "My Movies",
-    "page.home.title": "Home Page",
-    "page.review.list.title": "Reviews",
-    "page.review.edit.title": "Reviews",
-    "page.recommendations.title": "Recommendations"
+    "header.link.search": "Search",
+    "header.link.history": "Watch History",
+    "header.link.recommendations": "Recommendations",
+    "header.link.about": "About this app",
+    "page.search.title": "Search",
+    "page.search.results.searching": "Searching for movie",
+    "page.search.results.error": "An error has occurred when searching for the movie. Please try again.",
+    "page.search.results.request": "Please enter a movie title in the field and click the Search button.",
+    "page.search.results.not.found": "Unable to find a matching movie title! Please try again.",
+    "page.search.buttons.review": "Review This Movie",
+    "page.search.buttons.history": "Add To Watch History",
+    "page.history.title": "Watch History",
+    "page.history.subtitle": "Your watch history is shown below",
+    "page.history.empty": "You have no movies in your watch history. You should review some!",
+
+    "page.movie.none.selected": "No movie has been currently selected. To review a movie, search for it's title from the Search page.",
+    "page.recommendations.title": "Recommendations",
+    "page.about.title": "About This App",
+    "common.error": "An error has occurred. Please reload the application and try again.",
+    "common.search": "Search",
+    "common.loading": "Loading"
 }

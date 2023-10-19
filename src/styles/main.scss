@@ -1,0 +1,29 @@
+@use 'colors';
+@use 'bootstrap';
+@use 'variables';
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+    li::marker {
+        color: colors.$rk-secondary;
+    }
+
+    .offcanvas {
+
+        .navbar-nav {
+
+            .nav-link.active,
+            .nav-link:hover {
+                color: colors.$rk-secondary;
+            }
+        }
+    }
+}

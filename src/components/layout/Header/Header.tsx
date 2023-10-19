@@ -1,4 +1,4 @@
-// import MenuItem from 'components/controls/NavItem/NavItem';
+import NavLink from 'components/controls/NavLink/NavLink';
 import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 // import { sidePanelClosed, sidePanelToggled } from 'state/slices/layoutSlice';
 import routes from 'utils/routes';
 import { useTranslation } from 'react-i18next';
+import { RouteID } from 'utils/types';
 
 const Header = () => {
 
@@ -46,7 +47,10 @@ const Header = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className='me-auto'>
-                                {/* {routeItemsMarkup} */}
+                                <NavLink path={routes.get(RouteID.SEARCH)!.path} label={t('header.link.search')}></NavLink>
+                                <NavLink path={routes.get(RouteID.HISTORY)!.path} label={t('header.link.history')}></NavLink>
+                                <NavLink path={routes.get(RouteID.RECOMMENDATIONS)!.path} label={t('header.link.recommendations')}></NavLink>
+                                <NavLink path={routes.get(RouteID.ABOUT)!.path} label={t('header.link.about')}></NavLink>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

@@ -1,0 +1,10 @@
+@use 'src/styles/variables';
+
+.rk-search-buttons {
+    display: flex;
+    align-items: center;
+
+    h4 {
+        font-weight: variables.$rk-font-light;
+    }
+}

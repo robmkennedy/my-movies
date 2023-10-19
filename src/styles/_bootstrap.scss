@@ -1,0 +1,38 @@
+@use 'variables';
+@use 'colors';
+
+$link-decoration: none;
+
+$body-color: colors.$rk-primary;
+$link-color: colors.$rk-primary;
+
+$btn-close-color:  colors.$rk-primary;
+$btn-close-opacity:  1;
+
+$accordion-bg:  transparent;
+$accordion-button-active-bg:    colors.$rk-secondary;
+$accordion-button-active-color: colors.$rk-accordion-active;
+
+$nav-link-padding-y:    1rem;
+$nav-link-font-weight:  variables.$rk-font-light;
+$navbar-nav-link-padding-x: 1rem;
+
+$navbar-brand-margin-end:   6%;
+$navbar-toggler-focus-width: 0;
+$navbar-active-color: colors.$rk-secondary;
+
+$navbar-dark-color:         colors.$rk-primary;
+$navbar-dark-hover-color:   colors.$rk-secondary;;
+$navbar-dark-active-color:  colors.$rk-secondary;;
+$navbar-dark-brand-color:   colors.$rk-primary;
+$navbar-dark-brand-hover-color: colors.$rk-primary;
+$navbar-dark-toggler-border-color:  transparent;
+
+$nav-underline-gap: .5rem;
+$nav-underline-link-active-color: colors.$rk-secondary;
+
+$offcanvas-bg-color:    colors.$rk-sidebar-bg;
+$offcanvas-horizontal-width: 300px;
+
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap-grid';
