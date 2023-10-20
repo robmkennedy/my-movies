@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import PageSubtitle from 'components/common/PageSubtitle/PageSubtitle';
 import SearchBar from 'components/controls/SearchBar/SearchBar';
 import { LayoutState } from 'utils/types';
-import Movie from 'model/Movie';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import { useParams } from 'react-router-dom';
 import { useGetMovieByIdQuery } from 'state/slices/movieApiSlice';
@@ -30,7 +29,7 @@ const MoviePage = () => {
         content = <LoadingBox message={t('page.movie.loading')} />
     }
     else if (error) {
-        content = <ErrorBox message={t('page.movie.error')} />
+        content = <ErrorBox message={t('page.movie.loading.error')} />
     }
     else if (data) {
 

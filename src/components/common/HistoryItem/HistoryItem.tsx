@@ -1,9 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import Movie from 'model/Movie';
-import { Button } from 'react-bootstrap';
-import { useAppDispatch } from 'hooks/stateHooks';
-import { addedToHistory, deletedFromHistory } from 'state/slices/historySlice';
-import { useHistoryItemsSelector } from 'hooks/selectorHooks';
+import './HistoryItem.scss';
+import { Movie } from 'utils/types';
 
 type HistoryItemProps = {
     movie: Movie;
@@ -12,20 +9,11 @@ type HistoryItemProps = {
 const HistoryItem = ({ movie }: HistoryItemProps) => {
 
     const { t } = useTranslation();
-    const dispatch = useAppDispatch();
- 
-    const handleClick = () => {
-        dispatch(deletedFromHistory(movie));
-    };
-
-    debugger;
 
     return (
         <a href={`/movie/${movie.imdbID}`} className='rk-history-item'>
-            {movie.title}
-            <Button onClick={handleClick}>{t('page.history.buttons.delete')}</Button>
-            <Button onClick={handleClick}>{t('page.history.buttons.delete')}</Button>
-
+            <img src={movie.poster} alt='Movie Poster' className='rk-movie-poster' />
+            <h5 className='rk-history-item-title'>{movie.title}</h5>
         </a>
     );
 }

@@ -6,7 +6,6 @@ import { getMostOccurrences } from 'utils/helpers';
 import RecommendationChart from 'components/common/RecommendationChart/RecommendationChart';
 
 const RecommendationsPage = () => {
-
     const { t } = useTranslation();
 
     const historyObj = useHistoryItemsSelector();
@@ -28,10 +27,19 @@ const RecommendationsPage = () => {
                 <Row>
                     <Col>
                         <PageTitle title={t('page.recommendations.title')} />
-                        <RecommendationChart title={t('page.recommendations.actor.title')}
+                    </Col>
+                </Row>
+                <Row className='gx-0'>
+                    <Col lg={5}>
+                        <RecommendationChart type={t('page.recommendations.actor')}
+                            title={t('page.recommendations.actor.title')}
                             description={t('page.recommendations.actor.description')}
                             occurrencesMap={actorOccurrencesMap} />
-                        <RecommendationChart title={t('page.recommendations.genre.title')}
+                    </Col>
+                    <Col lg={2} />
+                    <Col lg={5}>
+                        <RecommendationChart type={t('page.recommendations.genre')}
+                            title={t('page.recommendations.genre.title')}
                             description={t('page.recommendations.genre.description')}
                             occurrencesMap={genreOccurrencesMap} />
                     </Col>

@@ -2,15 +2,16 @@
 @use 'src/styles/variables';
 
 
-$rk-spinner-size: 60px;
+$rk-spinner-size: 50px;
 
 .rk-loading-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
-    h4 {
+    h5 {
         font-weight: variables.$rk-font-light;
     }
 

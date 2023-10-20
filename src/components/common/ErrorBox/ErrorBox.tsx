@@ -12,7 +12,7 @@ const ErrorBox = ({ message }: ErrorBoxProps) => {
 
     return (
         <div className='rk-error-box'>
-            <h4>{displayMessage}</h4>
+            <h5>{displayMessage}</h5>
         </div>
     );
 }

@@ -8,9 +8,9 @@ const MessageBox = ({ message }: MessageBoxProps) => {
 
     return (
         <div className='rk-message-box'>
-            <h4>{message}</h4>
+            <h5>{message}</h5>
         </div>
     );
-}
+};
 
 export default MessageBox;

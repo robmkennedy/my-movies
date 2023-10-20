@@ -7,11 +7,13 @@ import historySlice from 'state/slices/historySlice';
 import { movieApiSlice } from 'state/slices/movieApiSlice';
 import { loadState, saveState } from 'utils/localStorage';
 import { throttle } from 'utils/helpers';
+import reviewSlice from './slices/reviewSlice';
 
 const LOCAL_STORAGE_KEY = 'my-movies.history'
 
 const rootReducer = {
     movie: movieSlice.reducer,
+    review: reviewSlice.reducer,
     layout: layoutSlice.reducer,
     history: historySlice.reducer,
     [movieApiSlice.reducerPath]: movieApiSlice.reducer,

@@ -13,9 +13,9 @@ const LoadingBox = ({ message }: LoadingBoxProps) => {
     return (
         <div className='rk-loading-box'>
             <div className='rk-spinner' />
-            <h4>{displayMessage}</h4>
+            <h5>{displayMessage}</h5>
         </div>
     );
-}
+};
 
 export default LoadingBox;

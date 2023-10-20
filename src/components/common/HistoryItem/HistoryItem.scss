@@ -1,0 +1,17 @@
+@use 'src/styles/variables';
+
+$rk-poster-width: 150px;
+
+.rk-history-item {
+    display: inline-block;
+    text-align: center;
+
+    .rk-history-item-title {
+        font-weight: variables.$rk-font-light;
+    }
+
+    img {
+        width: $rk-poster-width;
+        margin-bottom: 10px;
+    }
+}

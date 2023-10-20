@@ -1,4 +1,3 @@
-import Movie from "model/Movie";
 import { FunctionComponent } from "react";
 
 /**
@@ -37,6 +36,29 @@ export type MovieRating = {
     value: string;
 };
 
+export type Movie = {
+    found: boolean;
+
+    title: string;
+    year: string;
+    rated: string;
+    released: string;
+    runtime: string;
+    genre: string[];
+    director: string;
+    writers: string[];
+    actors: string[];
+    plot: string;
+    language: string;
+    country: string;
+    awards: string;
+    poster: string;
+    imdbRating: string;
+    tomatoRating: string;
+    metacriticRating: string;
+    imdbID: string;
+}
+
 /**
  * 
  */
@@ -57,19 +79,36 @@ export type MovieResponse = {
     Poster: string;
     Ratings: { Source: string, Value: string }[],
     imdbID: string;
-    Error?: string
+    Error?: string;
 }
 
-export type LayoutState  = {
+export type Review = {
+    imdbID: string;
+    rating: string;
+    comment: string;
+}
+
+export type ReviewResponse = {
+    rating: string;
+    comment: string;
+}
+
+export type MovieState = {
+    searchValue: string;
+};
+
+export type LayoutState = {
     sidePanelOpen: boolean
 };
 
-export type MovieState  = {
-    searchValue: string
-};
-
-export type HistoryState  = {
+export type HistoryState = {
     historyItems: {
         [index: string]: Movie
+    }
+};
+
+export type ReviewState = {
+    reviewItems: {
+        [index: string]: Review
     }
 };

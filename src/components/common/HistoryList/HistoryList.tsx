@@ -1,9 +1,10 @@
+import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
+import { useHistoryItemsSelector } from 'hooks/selectorHooks';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
-import HistoryItem from '../HistoryItem/HistoryItem';
-import { Fragment } from 'react';
+import HistoryItem from 'components/common/HistoryItem/HistoryItem';
+import './HistoryList.scss';
 
 const HistoryList = () => {
 

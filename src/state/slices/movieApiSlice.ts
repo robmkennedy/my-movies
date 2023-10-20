@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import Movie from 'model/Movie';
+import MovieFactory from 'model/MovieFactory';
 import { MovieResponse } from 'utils/types';
 
 const apiKey = 'eb143593';
@@ -16,13 +16,13 @@ export const movieApiSlice = createApi({
         getMovieById: builder.query({
             query: (searchId) => `?i=${searchId}&apikey=${apiKey}`,
             transformResponse: (response: MovieResponse) => {
-                return new Movie(response);
+                return MovieFactory.parseResponse(response);
             }
         }),
         getMovieByName: builder.query({
             query: (searchName) => `?t=${searchName}&apikey=${apiKey}`,
             transformResponse: (response: MovieResponse) => {
-                return new Movie(response);
+                return MovieFactory.parseResponse(response);
             }
         })
     }),

@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import routes from 'utils/routes';
+import './MainPanel.scss';
 
 /**
  * The MainPanel is the main area of the application displayed beneath the header. 

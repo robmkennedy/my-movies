@@ -1,14 +1,20 @@
 import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
+import { useHistoryItemsSelector, useReviewItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
 import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
-import Movie from 'model/Movie';
 import { Button } from 'react-bootstrap';
 import PageTitle from '../PageTitle/PageTitle';
 import { useAppDispatch } from 'hooks/stateHooks';
 import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
+import { type } from 'os';
+import ReviewEditor from '../ReviewEditor/ReviewEditor';
+import ReviewDetails from '../ReviewDetails/ReviewDetails';
+import ButtonGroup from '../ButtonGroup/ButtonGroup';
+import { Movie, Review, ReviewResponse } from 'utils/types';
+import ReviewFactory from 'model/ReviewFactory';
+import { addedToReviews, deletedFromReviews } from 'state/slices/reviewSlice';
 
 type MovieReviewProps = {
     movie: Movie;
@@ -19,38 +25,49 @@ const MovieReview = ({ movie }: MovieReviewProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
 
+    const reviewItems = useReviewItemsSelector();
     const historyItems = useHistoryItemsSelector();
 
-    const existingMovie = historyItems[movie.imdbID];
+    const [isEditing, setIsEditing] = useState(false);
 
+    let existingMovie = historyItems[movie.imdbID];
+    let existingReview = reviewItems[movie.imdbID];
 
-    const handleSaveClick = () => {
-        dispatch(addedToHistory(movie));
+    existingMovie = existingMovie ? existingMovie : movie;
+
+    const handleEdit = () => {
+        setIsEditing(true);
     };
 
-    const handleUpdateClick = () => {
-        dispatch(updatedInHistory(movie));
+    const handleCancel = () => {
+        setIsEditing(false);
     };
 
-    const handleRemoveClick = () => {
-        dispatch(deletedFromHistory(movie));
+    const handleSave = (response: ReviewResponse) => {
+        const updatedReview = ReviewFactory.parseResponse(movie.imdbID, response);
+        dispatch(addedToReviews(updatedReview));
+        dispatch(addedToHistory(existingMovie));
+        setIsEditing(false);
     };
 
-    let buttonContent = null;
-    if (existingMovie) {
-        buttonContent = (<Fragment>
-            <Button onClick={handleUpdateClick}>{t('page.movie.buttons.update')}</Button>
-            <Button onClick={handleRemoveClick}>{t('page.movie.buttons.delete')}</Button>
-        </Fragment>);
+    const handleDelete = () => {
+        dispatch(deletedFromReviews(movie.imdbID));
+    };
+
+    let content = null;
+    if (isEditing) {
+        content = <ReviewEditor review={existingReview} onCancel={handleCancel} onSave={handleSave} />;
     }
     else {
-        buttonContent = <Button onClick={handleSaveClick}>{t('page.movie.buttons.save')}</Button>
+        content = <ReviewDetails review={existingReview} onDelete={handleDelete} onEdit={handleEdit} onAdd={handleEdit} />;
     }
 
     return (
-        <section className='.rk-movie-review'>
-            <PageTitle title={movie.title} />
-            {buttonContent}
+        <section className='rk-movie-review'>
+            <div className='rk-review-title'>{t('page.movie.review.title')}</div>
+            <div className='rk-review-content'>
+                {content}
+            </div>
         </section>
     );
 }

@@ -12,12 +12,18 @@ const layoutSlice = createSlice({
     name: 'layout',
     initialState: initialLayoutState,
     reducers: {
-        sidePanelToggled: (state, { payload }) => {
-            state.sidePanelOpen = !payload;
+        sidePanelOpened: (state) => {
+            state.sidePanelOpen = true;
+        },
+        sidePanelClosed: (state) => {
+            state.sidePanelOpen = false;
+        },
+        sidePanelToggled: (state) => {
+            state.sidePanelOpen = !state.sidePanelOpen;
         }
     }
 });
 
-export const { sidePanelToggled } = layoutSlice.actions;
+export const { sidePanelOpened, sidePanelClosed, sidePanelToggled } = layoutSlice.actions;
 
 export default layoutSlice;

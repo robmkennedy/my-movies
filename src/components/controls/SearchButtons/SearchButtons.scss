@@ -3,8 +3,10 @@
 .rk-search-buttons {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     h4 {
+        margin-bottom: 0;
         font-weight: variables.$rk-font-light;
     }
 }

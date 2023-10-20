@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import Movie from 'model/Movie';
 import { Button } from 'react-bootstrap';
 import './SearchButtons.scss';
+import { Movie } from 'utils/types';
 
 type SearchButtonsProps = {
     movie: Movie

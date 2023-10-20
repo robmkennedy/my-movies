@@ -1,23 +1,55 @@
 {
     "app.title": "My Movies",
+
     "header.link.search": "Search",
-    "header.link.history": "Watch History",
+    "header.link.history": "Viewing History",
     "header.link.recommendations": "Recommendations",
     "header.link.about": "About this app",
+
     "page.search.title": "Search",
     "page.search.results.searching": "Searching for movie",
     "page.search.results.error": "An error has occurred when searching for the movie. Please try again.",
     "page.search.results.request": "Please enter a movie title in the field and click the Search button.",
-    "page.search.results.not.found": "Unable to find a matching movie title! Please try again.",
+    "page.search.results.not.found": "Unable to find a matching movie title. Please try again.",
     "page.search.buttons.review": "Review This Movie",
-    "page.search.buttons.history": "Add To Watch History",
-    "page.history.title": "Watch History",
-    "page.history.subtitle": "Your watch history is shown below",
-    "page.history.empty": "You have no movies in your watch history. You should review some!",
 
+    "page.history.title": "Viewing History",
+    "page.history.subtitle": "Your watch history is shown below",
+    "page.history.empty": "You have no movies in your viewing history. You should review some!",
+
+    "page.movie.loading": "Loading movie",
+    "page.movie.loading.error": "An error occurred when loading the movie. Please try again.",
+    "page.movie.not.found": "Unable to find a matching movie title! Please try again.",
+    "page.movie.buttons.add": "Add To Viewing History",
+    "page.movie.buttons.delete": "Save To Viewing History",
+    "page.movie.buttons.remove": "Delete From Viewing History",
+    "page.movie.review.add": "Add Review",
+    "page.movie.review.edit": "Edit Review",
+    "page.movie.review.save": "Save Review",
+    "page.movie.review.delete": "Delete Review",
+    "page.movie.review.cancel": "Cancel",
+    "page.movie.review.title": "My Review",
+    "page.movie.review.none": "There is no review for this movie. Click the Add button to create a new review.",
     "page.movie.none.selected": "No movie has been currently selected. To review a movie, search for it's title from the Search page.",
+
     "page.recommendations.title": "Recommendations",
+    "page.recommendations.actor": "Actor",
+    "page.recommendations.genre": "Genre",
+    "page.recommendations.watched": "Movies Watched",
+    "page.recommendations.actor.title": "Your favorite actor is",
+    "page.recommendations.actor.description": "Perhaps you would like other movies starring the following actors you have watched.",
+    "page.recommendations.genre.title": "Your favorite genre is",
+    "page.recommendations.genre.description": "Perhaps you would like other movies of the following genres you have watched. ",
+
+    
     "page.about.title": "About This App",
+
+    "movie.details.title": "Title",
+    "movie.details.year": "Year",
+    "movie.details.plot": "Plot",
+    "movie.details.actors": "Actors",
+    "movie.details.genre": "Genre",
+
     "common.error": "An error has occurred. Please reload the application and try again.",
     "common.search": "Search",
     "common.loading": "Loading"

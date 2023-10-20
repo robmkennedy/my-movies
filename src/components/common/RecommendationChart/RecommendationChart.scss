@@ -1,0 +1,16 @@
+@use 'src/styles/colors';
+@use 'src/styles/variables';
+
+.rk-recommendation-chart {
+    margin-bottom: 60px;
+
+    .rk-recommendation-chart-description,
+    .rk-recommendation-chart-title  {
+        margin-bottom: 20px;
+        font-weight: variables.$rk-font-light;
+
+        span {
+            color: colors.$rk-highlight
+        }
+    }
+}

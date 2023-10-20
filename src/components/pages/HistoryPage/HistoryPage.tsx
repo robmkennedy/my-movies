@@ -14,7 +14,6 @@ const HistoryPage = () => {
                 <Row>
                     <Col>
                         <PageTitle title={t('page.history.title')} />
-                        <PageSubtitle text={t('page.history.subtitle')} />
                         <HistoryList />
                     </Col>
                 </Row>

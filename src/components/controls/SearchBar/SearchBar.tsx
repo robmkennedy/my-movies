@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { InputGroup, Button, Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { movieSearched } from 'state/slices/movieSlice';
+import { InputGroup, Button, Form } from 'react-bootstrap';
 
 type SearchBarProps = {
     onSearch: Function
@@ -16,24 +15,24 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         onSearch(inputValue);
     };
 
+    const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {
+        if (event.key === 'Enter') {
+            onSearch(inputValue);
+        }
+    };
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setInputValue(event.target.value);
     };
 
     return (
-        <section id='searchBar'>
+        <section id='searchBar' className='mt-lg-4 mb-4 mb-lg-5'>
             <InputGroup className="mb-3">
-                <Form.Control
-                    placeholder="Recipient's username"
-                    aria-label="Recipient's username"
-                    aria-describedby="basic-addon2"
-                    onChange={handleChange}
-                    value={inputValue}
-                />
-                <Button variant="outline-secondary" id="button-addon2" onClick={handleClick}>{t('common.search')}</Button>
+                <Form.Control placeholder="Movie title" aria-label="Movie title" onChange={handleChange} onKeyUp={handleKeyUp} value={inputValue} />
+                <Button variant="outline-secondary" onClick={handleClick}>{t('common.search')}</Button>
             </InputGroup>
         </section>
     );
-}
+};
 
 export default SearchBar;

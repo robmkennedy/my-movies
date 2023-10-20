@@ -2,8 +2,7 @@
 // A few more things are implicitly done by RTK, for example createAsyncThunk will autmatically create three actions for every thunk: yourActionPrefix/pending, yourActionPrefix/fulfilled and yourActionPrefix/rejected.
 
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import Movie from 'model/Movie';
-import { HistoryState } from 'utils/types';
+import { HistoryState, Movie } from 'utils/types';
 
 const initialHistoryState: HistoryState = {
     historyItems: {}
@@ -19,8 +18,8 @@ const historySlice = createSlice({
         updatedInHistory: (state, { payload }: PayloadAction<Movie>) => {
             state.historyItems[payload.imdbID] = payload;
         },
-        deletedFromHistory: (state, { payload }: PayloadAction<Movie>) => {
-            delete state.historyItems[payload.imdbID];
+        deletedFromHistory: (state, { payload }: PayloadAction<string>) => {
+            delete state.historyItems[payload];
         }
     }
 });

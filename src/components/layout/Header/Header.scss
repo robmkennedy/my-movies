@@ -1,0 +1,9 @@
+$logo-size: 30px;
+
+.navbar-brand img {
+    display: inline-block;
+    width: $logo-size;
+    height: $logo-size;
+    margin-right: 10px;
+    vertical-align: top;
+}
