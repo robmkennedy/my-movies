@@ -26,7 +26,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
     };
 
     return (
-        <section id='searchBar' className='mt-lg-4 mb-4 mb-lg-5'>
+        <section className='search-bar mt-lg-4 mb-4 mb-lg-5'>
             <InputGroup className="mb-3">
                 <Form.Control placeholder="Movie title" aria-label="Movie title" onChange={handleChange} onKeyUp={handleKeyUp} value={inputValue} />
                 <Button variant="outline-secondary" onClick={handleClick}>{t('common.search')}</Button>

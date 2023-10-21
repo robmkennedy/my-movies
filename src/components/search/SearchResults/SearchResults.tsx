@@ -4,7 +4,7 @@ import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
 import { SerializedError } from '@reduxjs/toolkit';
-import MovieDetails from 'components/common/MovieDetails/MovieDetails';
+import MovieDetails from 'components/movie/MovieDetails/MovieDetails';
 import { Fragment } from 'react';
 import SearchButtons from '../SearchButtons/SearchButtons';
 import { Col, Row } from 'react-bootstrap';
@@ -48,7 +48,7 @@ const SearchResults = ({ data, error, isFetching }: SearchResultsProps) => {
     }
 
     return (
-        <section id='searchResults'>
+        <section className='search-results'>
             {content}
         </section>
     );

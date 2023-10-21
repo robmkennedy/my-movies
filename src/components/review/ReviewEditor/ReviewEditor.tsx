@@ -4,11 +4,11 @@ import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap';
-import PageTitle from '../PageTitle/PageTitle';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useAppDispatch } from 'hooks/stateHooks';
 import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
 import { Fragment, MouseEventHandler, useState } from 'react';
-import ButtonGroup from '../ButtonGroup/ButtonGroup';
+import ButtonGroup from 'components/common/ButtonGroup/ButtonGroup';
 import './ReviewEditor.scss';
 import { Review } from 'utils/types';
 

@@ -1,5 +1,5 @@
-import SearchBar from 'components/controls/SearchBar/SearchBar';
-import SearchResults from 'components/controls/SearchResults/SearchResults';
+import SearchBar from 'components/search/SearchBar/SearchBar';
+import SearchResults from 'components/search/SearchResults/SearchResults';
 import { useLazyGetMovieByNameQuery } from 'state/slices/movieApiSlice';
 
 const SearchPanel = () => {
@@ -11,10 +11,10 @@ const SearchPanel = () => {
     };
 
     return (
-        <article className='rk-search-panel'>
+        <section className='rk-search-panel'>
             <SearchBar onSearch={handleSearch} />
             <SearchResults data={data} error={error} isFetching={isFetching} />
-        </article>
+        </section>
     );
 };
 

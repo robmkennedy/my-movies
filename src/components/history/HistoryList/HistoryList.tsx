@@ -6,32 +6,26 @@ import MessageBox from 'components/common/MessageBox/MessageBox';
 import HistoryItem from 'components/history/HistoryItem/HistoryItem';
 import './HistoryList.scss';
 
-const HistoryList = () => {
+type HistoryListProps = {
+    history: Object
+}
 
-    const { t } = useTranslation();
+const HistoryList = ({ history }: HistoryListProps) => {
 
-    const historyObj = useHistoryItemsSelector();
+    let movieArray = [...Object.values(history)];
 
-    let content = <LoadingBox message={t('page.history.loading')} />
-
-    if (!historyObj || Object.keys(historyObj).length === 0) {
-        content = <MessageBox message={t('page.history.empty')} />
-    }
-    else {
-        let movieArray = [...Object.values(historyObj)];
-        content = (
-            <Fragment>
-                {movieArray.map((movie, index) => {
-                    return <HistoryItem movie={movie} key={index} />
-                })}
-            </Fragment>
-        );
-    }
+    let content = (
+        <Fragment>
+            {movieArray.map((movie, index) => {
+                return <HistoryItem movie={movie} key={index} />
+            })}
+        </Fragment>
+    );
 
     return (
-        <section id='historyList'>
+        <div className='rk-history-list'>
             {content}
-        </section>
+        </div>
     );
 }
 

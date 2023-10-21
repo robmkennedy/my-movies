@@ -9,7 +9,7 @@ import { loadState, saveState } from 'utils/localStorage';
 import { throttle } from 'utils/helpers';
 import reviewSlice from './slices/reviewSlice';
 
-const LOCAL_STORAGE_KEY = 'my-movies.history'
+const LOCAL_STORAGE_KEY = 'my-movies'
 
 const rootReducer = {
     movie: movieSlice.reducer,
@@ -19,10 +19,11 @@ const rootReducer = {
     [movieApiSlice.reducerPath]: movieApiSlice.reducer,
 };
 
-const persistedObject = loadState(LOCAL_STORAGE_KEY) || {};
+const initialStorage = { reviewItems: {}, historyItems: {} };
+
+const persistedObject = loadState(LOCAL_STORAGE_KEY) || initialStorage;
 const { reviewItems, historyItems } = persistedObject;
 
-debugger;
 
 const store = configureStore({
     reducer: rootReducer,

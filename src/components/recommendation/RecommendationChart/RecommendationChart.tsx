@@ -20,7 +20,7 @@ const RecommendationChart = ({ type, title, description, occurrencesMap }: Recom
     });
 
     return (
-        <div className='rk-recommendation-chart'>
+        <section className='rk-recommendation-chart'>
             <h3 className='rk-recommendation-chart-title'>{title} <span>{countArray[0][0]}</span></h3>
             <h5 className='rk-recommendation-chart-description'>{description}</h5>
             <Table striped bordered hover>
@@ -34,7 +34,7 @@ const RecommendationChart = ({ type, title, description, occurrencesMap }: Recom
                     {rows}
                 </tbody>
             </Table>
-        </div>
+        </section>
     );
 }
 

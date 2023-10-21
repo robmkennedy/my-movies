@@ -4,17 +4,18 @@ import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import { Button } from 'react-bootstrap';
-import PageTitle from '../PageTitle/PageTitle';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useAppDispatch } from 'hooks/stateHooks';
 import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
 import { Fragment, useState } from 'react';
 import { type } from 'os';
-import ReviewEditor from '../ReviewEditor/ReviewEditor';
-import ReviewDetails from '../ReviewDetails/ReviewDetails';
-import ButtonGroup from '../ButtonGroup/ButtonGroup';
+import ReviewEditor from 'components/review/ReviewEditor/ReviewEditor';
+import ReviewDetails from 'components/review/ReviewDetails/ReviewDetails';
+import ButtonGroup from 'components/common/ButtonGroup/ButtonGroup';
 import { Movie, Review, ReviewResponse } from 'utils/types';
 import ReviewFactory from 'model/ReviewFactory';
 import { addedToReviews, deletedFromReviews } from 'state/slices/reviewSlice';
+import './MovieReview.scss'
 
 type MovieReviewProps = {
     movie: Movie;

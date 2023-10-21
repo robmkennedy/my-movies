@@ -1,10 +1,10 @@
 import { RouteID, RouteConfig } from 'utils/types';
 
-import MoviePage from 'components/pages/MoviePage/MoviePage';
-import AboutPage from 'components/pages/AboutPage/AboutPage';
+import MoviePage from 'components/movie/MoviePage/MoviePage';
+import AboutPage from 'components/about/AboutPage/AboutPage';
 import SearchPage from 'components/search/SearchPage/SearchPage';
-import HistoryPage from 'components/pages/HistoryPage/HistoryPage';
-import RecommendationsPage from 'components/pages/RecommendationsPage/RecommendationsPage';
+import HistoryPage from 'components/history/HistoryPage/HistoryPage';
+import RecommendationsPage from 'components/recommendation/RecommendationsPage/RecommendationsPage';
 
 const routes = new Map<RouteID, RouteConfig>();
 

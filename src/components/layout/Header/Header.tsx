@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import NavLink from 'components/controls/NavLink/NavLink';
+import NavLink from 'components/layout/NavLink/NavLink';
 import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';

@@ -53,6 +53,7 @@ export type Movie = {
     country: string;
     awards: string;
     poster: string;
+    timeViewed: string
     imdbRating: string;
     tomatoRating: string;
     metacriticRating: string;

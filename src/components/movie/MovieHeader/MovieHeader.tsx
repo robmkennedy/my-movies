@@ -11,6 +11,7 @@ import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slic
 import './MovieHeader.scss';
 import { Movie } from 'utils/types';
 import { deletedFromReviews } from 'state/slices/reviewSlice';
+import PageHeader from 'components/common/PageHeader/PageHeader';
 
 type MovieHeaderProps = {
     movie: Movie;
@@ -42,10 +43,10 @@ const MovieHeader = ({ movie }: MovieHeaderProps) => {
     }
 
     return (
-        <section className='rk-movie-header'>
+        <PageHeader>
             <PageTitle title={movie.title} />
             {buttonContent}
-        </section>
+        </PageHeader>
     );
 }
 

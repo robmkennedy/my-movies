@@ -32,6 +32,7 @@ export default class MovieFactory {
             poster: MovieFactory.buildValue(json.Poster),
             imdbID: MovieFactory.buildValue(json.imdbID),
 
+            timeViewed: '',
             imdbRating: '',
             tomatoRating: '',
             metacriticRating: ''

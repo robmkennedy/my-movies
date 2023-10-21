@@ -14,7 +14,8 @@
     "page.search.buttons.review": "Review This Movie",
 
     "page.history.title": "Viewing History",
-    "page.history.subtitle": "Your watch history is shown below",
+    "page.history.loading": "Loading your viewing history",
+    "page.history.loading.error": "An error occurred when loading the viewing history. Please try again.",
     "page.history.empty": "You have no movies in your viewing history. You should review some!",
 
     "page.movie.loading": "Loading movie",
@@ -33,6 +34,7 @@
     "page.movie.none.selected": "No movie has been currently selected. To review a movie, search for it's title from the Search page.",
 
     "page.recommendations.title": "Recommendations",
+    "page.recommendations.none": "There are no recommendations available as your viewing history is empty.",
     "page.recommendations.actor": "Actor",
     "page.recommendations.genre": "Genre",
     "page.recommendations.watched": "Movies Watched",
