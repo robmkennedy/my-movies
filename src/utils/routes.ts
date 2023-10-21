@@ -2,7 +2,7 @@ import { RouteID, RouteConfig } from 'utils/types';
 
 import MoviePage from 'components/pages/MoviePage/MoviePage';
 import AboutPage from 'components/pages/AboutPage/AboutPage';
-import SearchPage from 'components/pages/SearchPage/SearchPage';
+import SearchPage from 'components/search/SearchPage/SearchPage';
 import HistoryPage from 'components/pages/HistoryPage/HistoryPage';
 import RecommendationsPage from 'components/pages/RecommendationsPage/RecommendationsPage';
 

@@ -11,10 +11,10 @@ const SearchPanel = () => {
     };
 
     return (
-        <div className='rk-search-panel'>
+        <article className='rk-search-panel'>
             <SearchBar onSearch={handleSearch} />
             <SearchResults data={data} error={error} isFetching={isFetching} />
-        </div>
+        </article>
     );
 };
 

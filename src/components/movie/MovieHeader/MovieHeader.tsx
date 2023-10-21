@@ -4,11 +4,10 @@ import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import { Button } from 'react-bootstrap';
-import PageTitle from '../PageTitle/PageTitle';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useAppDispatch } from 'hooks/stateHooks';
 import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
-import { Fragment } from 'react';
-import ButtonGroup from '../ButtonGroup/ButtonGroup';
+
 import './MovieHeader.scss';
 import { Movie } from 'utils/types';
 import { deletedFromReviews } from 'state/slices/reviewSlice';

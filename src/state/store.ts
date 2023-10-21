@@ -20,17 +20,21 @@ const rootReducer = {
 };
 
 const persistedObject = loadState(LOCAL_STORAGE_KEY) || {};
+const { reviewItems, historyItems } = persistedObject;
 
 debugger;
 
 const store = configureStore({
     reducer: rootReducer,
-    preloadedState: { 'history': {historyItems: persistedObject} },
+    preloadedState: { 'review': { reviewItems }, 'history': { historyItems }, },
     middleware: getDefaultMiddleware => getDefaultMiddleware().concat([movieApiSlice.middleware])
 });
 
 store.subscribe(throttle(() => {
-    const objectToPersist = store.getState().history.historyItems;
+    const objectToPersist = {
+        reviewItems: store.getState().review.reviewItems,
+        historyItems: store.getState().history.historyItems
+    }
     saveState(LOCAL_STORAGE_KEY, objectToPersist);
 }, 1000));
 

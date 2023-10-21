@@ -1,25 +1,24 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import PageTitle from 'components/common/PageTitle/PageTitle';
-import PageSubtitle from 'components/common/PageSubtitle/PageSubtitle';
-import HistoryList from 'components/common/HistoryList/HistoryList';
+import SearchPanel from 'components/search/SearchPanel/SearchPanel';
 import { useTranslation } from 'react-i18next';
 
-const HistoryPage = () => {
+const SearchPage = () => {
 
     const { t } = useTranslation();
 
     return (
-        <div id='reviewsPage'>
+        <article id='searchPage'>
             <Container>
                 <Row>
                     <Col>
-                        <PageTitle title={t('page.history.title')} />
-                        <HistoryList />
+                        <PageTitle title={t('page.search.title')} />
+                        <SearchPanel />
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </article>
     );
-}
+};
 
-export default HistoryPage;
+export default SearchPage;
