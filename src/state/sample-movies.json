@@ -1,244 +1,349 @@
 {
-    "tt0078346": {
-        "found": true,
-        "title": "Superman",
-        "year": "1978",
-        "rated": "PG",
-        "released": "15 Dec 1978",
-        "runtime": "143 min",
-        "genre": [
-            "Action",
-            "Adventure",
-            "Sci-Fi"
-        ],
-        "director": "Richard Donner",
-        "writers": [
-            "Jerry Siegel",
-            "Joe Shuster",
-            "Mario Puzo"
-        ],
-        "actors": [
-            "Christopher Reeve",
-            "Margot Kidder",
-            "Gene Hackman"
-        ],
-        "plot": "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero.",
-        "language": "English",
-        "country": "United States, United Kingdom, Canada",
-        "awards": "Nominated for 3 Oscars. 17 wins & 23 nominations total",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMzA0YWMwMTUtMTVhNC00NjRkLWE2ZTgtOWEzNjJhYzNiMTlkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt0078346"
+    "reviewItems": {
+        "tt0145487": {
+            "imdbID": "tt0145487",
+            "rating": "good",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt5442430": {
+            "imdbID": "tt5442430",
+            "rating": "poor",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt1599348": {
+            "imdbID": "tt1599348",
+            "rating": "excellent",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt0455944": {
+            "imdbID": "tt0455944",
+            "rating": "excellent",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt1041829": {
+            "imdbID": "tt1041829",
+            "rating": "terrible",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt1190080": {
+            "imdbID": "tt1190080",
+            "rating": "average",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt1211837": {
+            "imdbID": "tt1211837",
+            "rating": "good",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt3659388": {
+            "imdbID": "tt3659388",
+            "rating": "poor",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tt0359013": {
+            "imdbID": "tt0359013",
+            "rating": "terrible",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
     },
-    "tt6264654": {
-        "found": true,
-        "title": "Free Guy",
-        "year": "2021",
-        "rated": "PG-13",
-        "released": "13 Aug 2021",
-        "runtime": "115 min",
-        "genre": [
-            "Action",
-            "Adventure",
-            "Comedy"
-        ],
-        "director": "Shawn Levy",
-        "writers": [
-            "Matt Lieberman",
-            "Zak Penn"
-        ],
-        "actors": [
-            "Ryan Reynolds",
-            "Jodie Comer",
-            "Taika Waititi"
-        ],
-        "plot": "When Guy, a bank teller, learns that he is a non-player character in a bloodthirsty, open-world video game, he goes on to become the hero of the story and takes the responsibility of saving the world.",
-        "language": "English, Japanese, German",
-        "country": "United States, Canada",
-        "awards": "Nominated for 1 Oscar. 5 wins & 29 nominations total",
-        "poster": "https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt6264654"
-    },
-    "tt1431045": {
-        "found": true,
-        "title": "Deadpool",
-        "year": "2016",
-        "rated": "R",
-        "released": "12 Feb 2016",
-        "runtime": "108 min",
-        "genre": [
-            "Action",
-            "Comedy"
-        ],
-        "director": "Tim Miller",
-        "writers": [
-            "Rhett Reese",
-            "Paul Wernick"
-        ],
-        "actors": [
-            "Ryan Reynolds",
-            "Morena Baccarin",
-            "T.J. Miller"
-        ],
-        "plot": "A wisecracking mercenary gets experimented on and becomes immortal yet hideously scarred, and sets out to track down the man who ruined his looks.",
-        "language": "English",
-        "country": "United States",
-        "awards": "29 wins & 78 nominations",
-        "poster": "https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt1431045"
-    },
-    "tt10999120": {
-        "found": true,
-        "title": "Spirited",
-        "year": "2022",
-        "rated": "PG-13",
-        "released": "18 Nov 2022",
-        "runtime": "127 min",
-        "genre": [
-            "Comedy",
-            "Family",
-            "Musical"
-        ],
-        "director": "Sean Anders",
-        "writers": [
-            "Sean Anders",
-            "John Morris"
-        ],
-        "actors": [
-            "Will Ferrell",
-            "Ryan Reynolds",
-            "Octavia Spencer"
-        ],
-        "plot": "A musical version of Charles Dickens's story of a miserly misanthrope who is taken on a magical journey.",
-        "language": "English",
-        "country": "United States",
-        "awards": "8 nominations",
-        "poster": "https://m.media-amazon.com/images/M/MV5BY2RlZGFmYjAtNGZiMi00YjQ5LWE0ZmQtZmIyM2VmMjRhMTJlXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt10999120"
-    },
-    "tt7991608": {
-        "found": true,
-        "title": "Red Notice",
-        "year": "2021",
-        "rated": "PG-13",
-        "released": "12 Nov 2021",
-        "runtime": "118 min",
-        "genre": [
-            "Action",
-            "Comedy",
-            "Thriller"
-        ],
-        "director": "Rawson Marshall Thurber",
-        "writers": [
-            "Rawson Marshall Thurber"
-        ],
-        "actors": [
-            "Dwayne Johnson",
-            "Ryan Reynolds",
-            "Gal Gadot"
-        ],
-        "plot": "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
-        "language": "English, Russian, Italian, Spanish, Indonesian",
-        "country": "United States",
-        "awards": "1 nomination",
-        "poster": "https://m.media-amazon.com/images/M/MV5BZmRjODgyMzEtMzIxYS00OWY2LTk4YjUtMGMzZjMzMTZiN2Q0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt7991608"
-    },
-    "tt2126355": {
-        "found": true,
-        "title": "San Andreas",
-        "year": "2015",
-        "rated": "PG-13",
-        "released": "29 May 2015",
-        "runtime": "114 min",
-        "genre": [
-            "Action",
-            "Adventure",
-            "Thriller"
-        ],
-        "director": "Brad Peyton",
-        "writers": [
-            "Carlton Cuse",
-            "Andre Fabrizio",
-            "Jeremy Passmore"
-        ],
-        "actors": [
-            "Dwayne Johnson",
-            "Carla Gugino",
-            "Alexandra Daddario"
-        ],
-        "plot": "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey with his ex-wife across the state in order to rescue his daughter.",
-        "language": "English",
-        "country": "United States, Australia",
-        "awards": "2 wins & 10 nominations",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNzZhYmQ2NGMtZmRmYi00NzgzLTllNmUtNDQwZDAxMmE3NzI0XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt2126355"
-    },
-    "tt3521164": {
-        "found": true,
-        "title": "Moana",
-        "year": "2016",
-        "rated": "PG",
-        "released": "23 Nov 2016",
-        "runtime": "107 min",
-        "genre": [
-            "Animation",
-            "Adventure",
-            "Comedy"
-        ],
-        "director": "Ron Clements, John Musker, Don Hall",
-        "writers": [
-            "Jared Bush",
-            "Ron Clements",
-            "John Musker"
-        ],
-        "actors": [
-            "Auli'i Cravalho",
-            "Dwayne Johnson",
-            "Rachel House"
-        ],
-        "plot": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
-        "language": "English, French",
-        "country": "United States",
-        "awards": "Nominated for 2 Oscars. 22 wins & 90 nominations total",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt3521164"
-    },
-    "tt1489889": {
-        "found": true,
-        "title": "Central Intelligence",
-        "year": "2016",
-        "rated": "PG-13",
-        "released": "17 Jun 2016",
-        "runtime": "107 min",
-        "genre": [
-            "Action",
-            "Comedy",
-            "Crime"
-        ],
-        "director": "Rawson Marshall Thurber",
-        "writers": [
-            "Ike Barinholtz",
-            "David Stassen",
-            "Rawson Marshall Thurber"
-        ],
-        "actors": [
-            "Dwayne Johnson",
-            "Kevin Hart",
-            "Danielle Nicolet"
-        ],
-        "plot": "After he reconnects with an awkward pal from high school through Facebook, a mild-mannered accountant is lured into the world of international espionage.",
-        "language": "English",
-        "country": "United States, China",
-        "awards": "2 wins & 8 nominations",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMjA2NzEzNjIwNl5BMl5BanBnXkFtZTgwNzgwMTEzNzE@._V1_SX300.jpg",
-        "ratings": {},
-        "imdbID": "tt1489889"
+    "historyItems": {
+        "tt0145487": {
+            "found": true,
+            "title": "Spider-Man",
+            "year": "2002",
+            "rated": "PG-13",
+            "released": "03 May 2002",
+            "runtime": "121 min",
+            "genre": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+            ],
+            "director": "Sam Raimi",
+            "writers": [
+                "Stan Lee",
+                "Steve Ditko",
+                "David Koepp"
+            ],
+            "actors": [
+                "Tobey Maguire",
+                "Kirsten Dunst",
+                "Willem Dafoe"
+            ],
+            "plot": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
+            "language": "English",
+            "country": "United States",
+            "awards": "Nominated for 2 Oscars. 17 wins & 63 nominations total",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg",
+            "imdbID": "tt0145487",
+            "timeViewed": "",
+            "imdbRating": "7.4/10",
+            "tomatoRating": "90%",
+            "metacriticRating": "73/100"
+        },
+        "tt5442430": {
+            "found": true,
+            "title": "Life",
+            "year": "2017",
+            "rated": "R",
+            "released": "24 Mar 2017",
+            "runtime": "104 min",
+            "genre": [
+                "Horror",
+                "Sci-Fi",
+                "Thriller"
+            ],
+            "director": "Daniel Espinosa",
+            "writers": [
+                "Rhett Reese",
+                "Paul Wernick"
+            ],
+            "actors": [
+                "Jake Gyllenhaal",
+                "Rebecca Ferguson",
+                "Ryan Reynolds"
+            ],
+            "plot": "A team of scientists aboard the International Space Station discover a rapidly evolving life form that caused extinction on Mars and now threatens all life on Earth.",
+            "language": "English, Japanese, Vietnamese",
+            "country": "United States",
+            "awards": "7 nominations",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMzAwMmQxNTctYjVmYi00MDdlLWEzMWUtOTE5NTRiNDhhNjI2L2ltYWdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+            "imdbID": "tt5442430",
+            "timeViewed": "",
+            "imdbRating": "6.6/10",
+            "tomatoRating": "68%",
+            "metacriticRating": "54/100"
+        },
+        "tt1599348": {
+            "found": true,
+            "title": "Safe House",
+            "year": "2012",
+            "rated": "R",
+            "released": "10 Feb 2012",
+            "runtime": "115 min",
+            "genre": [
+                "Action",
+                "Thriller"
+            ],
+            "director": "Daniel Espinosa",
+            "writers": [
+                "David Guggenheim"
+            ],
+            "actors": [
+                "Denzel Washington",
+                "Ryan Reynolds",
+                "Robert Patrick"
+            ],
+            "plot": "A young CIA agent is tasked with looking after a fugitive in a safe house. But when the safe house is attacked, he finds himself on the run with his charge.",
+            "language": "English, Afrikaans",
+            "country": "South Africa, United States, Japan",
+            "awards": "1 win & 7 nominations",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjI5ODkyMjA2Nl5BMl5BanBnXkFtZTcwNTcyNTgzNw@@._V1_SX300.jpg",
+            "imdbID": "tt1599348",
+            "timeViewed": "",
+            "imdbRating": "6.7/10",
+            "tomatoRating": "53%",
+            "metacriticRating": "52/100"
+        },
+        "tt0455944": {
+            "found": true,
+            "title": "The Equalizer",
+            "year": "2014",
+            "rated": "R",
+            "released": "26 Sep 2014",
+            "runtime": "132 min",
+            "genre": [
+                "Action",
+                "Crime",
+                "Thriller"
+            ],
+            "director": "Antoine Fuqua",
+            "writers": [
+                "Richard Wenk",
+                "Michael Sloan",
+                "Richard Lindheim"
+            ],
+            "actors": [
+                "Denzel Washington",
+                "Marton Csokas",
+                "Chloë Grace Moretz"
+            ],
+            "plot": "A man who believes he has put his mysterious past behind him cannot stand idly by when he meets a young girl under the control of ultra-violent Russian gangsters.",
+            "language": "English, Russian, Spanish, German, Ukrainian",
+            "country": "United States",
+            "awards": "1 win & 9 nominations",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MzE2NTk0NF5BMl5BanBnXkFtZTgwOTM3NTk1MjE@._V1_SX300.jpg",
+            "imdbID": "tt0455944",
+            "timeViewed": "",
+            "imdbRating": "7.2/10",
+            "tomatoRating": "61%",
+            "metacriticRating": "57/100"
+        },
+        "tt1041829": {
+            "found": true,
+            "title": "The Proposal",
+            "year": "2009",
+            "rated": "PG-13",
+            "released": "19 Jun 2009",
+            "runtime": "108 min",
+            "genre": [
+                "Comedy",
+                "Drama",
+                "Romance"
+            ],
+            "director": "Anne Fletcher",
+            "writers": [
+                "Peter Chiarelli"
+            ],
+            "actors": [
+                "Sandra Bullock",
+                "Ryan Reynolds",
+                "Mary Steenburgen"
+            ],
+            "plot": "A pushy boss forces her young assistant to marry her in order to keep her visa status in the U.S. and avoid deportation to Canada.",
+            "language": "English",
+            "country": "United States",
+            "awards": "7 wins & 20 nominations",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOGM5YTNiYzktNmEwZC00ZjE5LWIyNzEtOTUwNDE0NmVkYzE3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+            "imdbID": "tt1041829",
+            "timeViewed": "",
+            "imdbRating": "6.7/10",
+            "tomatoRating": "45%",
+            "metacriticRating": "48/100"
+        },
+        "tt1190080": {
+            "found": true,
+            "title": "2012",
+            "year": "2009",
+            "rated": "PG-13",
+            "released": "13 Nov 2009",
+            "runtime": "158 min",
+            "genre": [
+                "Action",
+                "Adventure",
+                "Sci-Fi"
+            ],
+            "director": "Roland Emmerich",
+            "writers": [
+                "Roland Emmerich",
+                "Harald Kloser"
+            ],
+            "actors": [
+                "John Cusack",
+                "Thandiwe Newton",
+                "Chiwetel Ejiofor"
+            ],
+            "plot": "A frustrated writer struggles to keep his family alive when a series of global catastrophes threatens to annihilate mankind.",
+            "language": "English, French, Tibetan, Mandarin, Russian, Hindi, Portuguese, Latin, Italian, Spanish",
+            "country": "United States",
+            "awards": "5 wins & 21 nominations",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTY0MjEyODQzMF5BMl5BanBnXkFtZTcwMTczMjQ4Mg@@._V1_SX300.jpg",
+            "imdbID": "tt1190080",
+            "timeViewed": "",
+            "imdbRating": "5.8/10",
+            "tomatoRating": "39%",
+            "metacriticRating": "49/100"
+        },
+        "tt1211837": {
+            "found": true,
+            "title": "Doctor Strange",
+            "year": "2016",
+            "rated": "PG-13",
+            "released": "04 Nov 2016",
+            "runtime": "115 min",
+            "genre": [
+                "Action",
+                "Adventure",
+                "Fantasy"
+            ],
+            "director": "Scott Derrickson",
+            "writers": [
+                "Jon Spaihts",
+                "Scott Derrickson",
+                "C. Robert Cargill"
+            ],
+            "actors": [
+                "Benedict Cumberbatch",
+                "Chiwetel Ejiofor",
+                "Rachel McAdams"
+            ],
+            "plot": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
+            "language": "English",
+            "country": "United States",
+            "awards": "Nominated for 1 Oscar. 20 wins & 68 nominations total",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
+            "imdbID": "tt1211837",
+            "timeViewed": "",
+            "imdbRating": "7.5/10",
+            "tomatoRating": "89%",
+            "metacriticRating": "72/100"
+        },
+        "tt3659388": {
+            "found": true,
+            "title": "The Martian",
+            "year": "2015",
+            "rated": "PG-13",
+            "released": "02 Oct 2015",
+            "runtime": "144 min",
+            "genre": [
+                "Adventure",
+                "Drama",
+                "Sci-Fi"
+            ],
+            "director": "Ridley Scott",
+            "writers": [
+                "Drew Goddard",
+                "Andy Weir"
+            ],
+            "actors": [
+                "Matt Damon",
+                "Jessica Chastain",
+                "Kristen Wiig"
+            ],
+            "plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue.",
+            "language": "English, Mandarin",
+            "country": "United States, United Kingdom, Hungary, Jordan",
+            "awards": "Nominated for 7 Oscars. 40 wins & 199 nominations total",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg",
+            "imdbID": "tt3659388",
+            "timeViewed": "",
+            "imdbRating": "8.0/10",
+            "tomatoRating": "91%",
+            "metacriticRating": "80/100"
+        },
+        "tt0359013": {
+            "found": true,
+            "title": "Blade: Trinity",
+            "year": "2004",
+            "rated": "R",
+            "released": "08 Dec 2004",
+            "runtime": "113 min",
+            "genre": [
+                "Action",
+                "Horror",
+                "Sci-Fi"
+            ],
+            "director": "David S. Goyer",
+            "writers": [
+                "David S. Goyer",
+                "Marv Wolfman",
+                "Gene Colan"
+            ],
+            "actors": [
+                "Wesley Snipes",
+                "Kris Kristofferson",
+                "Parker Posey"
+            ],
+            "plot": "Blade, now a wanted man by the FBI, must join forces with the Nightstalkers to face his most challenging enemy yet: Dracula.",
+            "language": "English, Esperanto",
+            "country": "United States",
+            "awards": "1 nomination",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjE0Nzg2MzI3MF5BMl5BanBnXkFtZTYwMjExODQ3._V1_SX300.jpg",
+            "imdbID": "tt0359013",
+            "timeViewed": "",
+            "imdbRating": "5.8/10",
+            "tomatoRating": "24%",
+            "metacriticRating": "38/100"
+        }
     }
 }
