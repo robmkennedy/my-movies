@@ -1,0 +1,12 @@
+@use 'src/styles/variables';
+
+.rk-about-content {
+
+    h2, h3, p, li {
+        font-weight: variables.$rk-font-light;
+    }
+
+    ul {
+        margin-bottom: 1.5rem;
+    }
+}

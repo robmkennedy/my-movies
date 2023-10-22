@@ -113,3 +113,7 @@ export type ReviewState = {
         [index: string]: Review
     }
 };
+
+export type AboutState = {
+    content: string
+};

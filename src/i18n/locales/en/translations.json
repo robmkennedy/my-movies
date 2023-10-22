@@ -46,8 +46,9 @@
     "page.recommendations.genre.title": "Your favorite genre is",
     "page.recommendations.genre.description": "Perhaps you would like other movies of the following genres you have watched. ",
 
-    
     "page.about.title": "About This App",
+    "page.about.loading": "Loading content about this app",
+    "page.about.loading.error": "An error occurred when loading this content. Please try again.",
 
     "movie.details.title": "Title",
     "movie.details.year": "Year",

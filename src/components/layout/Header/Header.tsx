@@ -1,18 +1,18 @@
 import { useEffect } from 'react';
-import NavLink from 'components/layout/NavLink/NavLink';
-import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import { sidePanelClosed, sidePanelToggled } from 'state/slices/layoutSlice';
-import { useAppDispatch } from 'hooks/stateHooks';
+import NavLink from 'components/layout/NavLink/NavLink';
 import { useLayoutSelector } from 'hooks/selectorHooks';
+import { useAppDispatch } from 'hooks/stateHooks';
 import { RouteID } from 'utils/types';
 import routes from 'utils/routes';
 import './Header.scss';
 
 const Header = () => {
-
     const { t } = useTranslation();
+
     const location = useLocation();
     const dispatch = useAppDispatch();
     const { sidePanelOpen } = useLayoutSelector();
@@ -31,7 +31,7 @@ const Header = () => {
             <Navbar className='navbar-dark' expand='lg' onToggle={handleToggle}>
                 <Container>
                     <NavbarBrand>
-                        <img src='/images/logo.svg' alt='My Movies Brand' />
+                        <img src='/logo.svg' alt='My Movies Brand' />
                         {t('app.title')}
                     </NavbarBrand>
                     <Navbar.Toggle aria-controls='navbarNav' />

@@ -20,9 +20,8 @@ const MovieDetails = ({ movie }: MovieDetailsProps) => {
     };
 
     return (
-        <section className='rk-movie-details'>
-            <Row>
-                <Col md={6} lg={7} xl={8} className='order-md-last'>
+        <section className='rk-movie-details d-flex flex-column flex-md-row justify-content-center justify-content-md-start'>
+                <div className='order-md-last'>
                     <div className='rk-movie-content'>
                         <div className='rk-movie-item'>
                             <div className='rk-movie-label'>{t('movie.details.title')}</div>
@@ -63,11 +62,10 @@ const MovieDetails = ({ movie }: MovieDetailsProps) => {
                             </div>
                         }
                     </div>
-                </Col>
-                <Col>
+                </div>
+                <div className='align-self-center align-self-md-start me-md-5'>
                     <img src={movie.poster} alt='Movie Poster' className='rk-movie-poster' />
-                </Col>
-            </Row>
+                </div>
         </section>
     );
 }

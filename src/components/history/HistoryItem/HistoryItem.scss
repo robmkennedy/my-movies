@@ -20,6 +20,6 @@ $rk-poster-width: 150px;
     }
 
     &:hover {
-        border-color: colors.$rk-link;
+        transform: scale(1.2);
     }
 }

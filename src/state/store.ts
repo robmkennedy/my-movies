@@ -8,6 +8,7 @@ import { movieApiSlice } from 'state/slices/movieApiSlice';
 import { loadState, saveState } from 'utils/localStorage';
 import { throttle } from 'utils/helpers';
 import reviewSlice from './slices/reviewSlice';
+import { aboutApiSlice } from './slices/aboutApiSlice';
 
 const LOCAL_STORAGE_KEY = 'my-movies'
 
@@ -16,6 +17,7 @@ const rootReducer = {
     review: reviewSlice.reducer,
     layout: layoutSlice.reducer,
     history: historySlice.reducer,
+    [aboutApiSlice.reducerPath]: aboutApiSlice.reducer,
     [movieApiSlice.reducerPath]: movieApiSlice.reducer,
 };
 
@@ -28,7 +30,7 @@ const { reviewItems, historyItems } = persistedObject;
 const store = configureStore({
     reducer: rootReducer,
     preloadedState: { 'review': { reviewItems }, 'history': { historyItems }, },
-    middleware: getDefaultMiddleware => getDefaultMiddleware().concat([movieApiSlice.middleware])
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat([aboutApiSlice.middleware, movieApiSlice.middleware])
 });
 
 store.subscribe(throttle(() => {

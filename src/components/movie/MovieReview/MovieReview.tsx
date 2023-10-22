@@ -1,29 +1,19 @@
-import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector, useReviewItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
-import ErrorBox from 'components/common/ErrorBox/ErrorBox';
-import LoadingBox from 'components/common/LoadingBox/LoadingBox';
-import MessageBox from 'components/common/MessageBox/MessageBox';
-import { Button } from 'react-bootstrap';
-import PageTitle from 'components/common/PageTitle/PageTitle';
-import { useAppDispatch } from 'hooks/stateHooks';
-import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
-import { Fragment, useState } from 'react';
-import { type } from 'os';
+import { useState } from 'react';
+import ReviewFactory from 'model/ReviewFactory';
 import ReviewEditor from 'components/review/ReviewEditor/ReviewEditor';
 import ReviewDetails from 'components/review/ReviewDetails/ReviewDetails';
-import ButtonGroup from 'components/common/ButtonGroup/ButtonGroup';
-import { Movie, Review, ReviewResponse } from 'utils/types';
-import ReviewFactory from 'model/ReviewFactory';
+import { useAppDispatch } from 'hooks/stateHooks';
+import { useHistoryItemsSelector, useReviewItemsSelector } from 'hooks/selectorHooks';
+import { addedToHistory } from 'state/slices/historySlice';
 import { addedToReviews, deletedFromReviews } from 'state/slices/reviewSlice';
-import './MovieReview.scss'
+import { Movie, ReviewResponse } from 'utils/types';
+import './MovieReview.scss';
 
 type MovieReviewProps = {
     movie: Movie;
 };
 
 const MovieReview = ({ movie }: MovieReviewProps) => {
-
-    const { t } = useTranslation();
     const dispatch = useAppDispatch();
 
     const reviewItems = useReviewItemsSelector();

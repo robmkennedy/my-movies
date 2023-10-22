@@ -1,14 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from 'react-bootstrap';
-import { Movie } from 'utils/types';
 import { NavLink } from 'react-router-dom';
+import { Movie } from 'utils/types';
 
 type SearchButtonsProps = {
     movie: Movie
 };
 
 const SearchButtons = ({ movie }: SearchButtonsProps) => {
-
     const { t } = useTranslation();
 
     return (

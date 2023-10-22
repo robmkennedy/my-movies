@@ -1,21 +1,13 @@
+import { MouseEventHandler, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
-import ErrorBox from 'components/common/ErrorBox/ErrorBox';
-import LoadingBox from 'components/common/LoadingBox/LoadingBox';
-import MessageBox from 'components/common/MessageBox/MessageBox';
-import { Button, Col, Dropdown, DropdownButton, Form, Row } from 'react-bootstrap';
-import PageTitle from 'components/common/PageTitle/PageTitle';
-import { useAppDispatch } from 'hooks/stateHooks';
-import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
-import { Fragment, MouseEventHandler, useState } from 'react';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import ButtonGroup from 'components/common/ButtonGroup/ButtonGroup';
-import './ReviewEditor.scss';
 import { Review } from 'utils/types';
 
 type ReviewEditorProps = {
-    review: Review | undefined;
     onSave: Function;
     onCancel: MouseEventHandler;
+    review: Review | undefined;
 };
 
 const ReviewEditor = ({ review, onCancel, onSave }: ReviewEditorProps) => {

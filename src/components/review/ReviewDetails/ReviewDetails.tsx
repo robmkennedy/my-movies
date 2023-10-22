@@ -1,20 +1,18 @@
-import { useTranslation } from 'react-i18next';
-import './ReviewDetails.scss';
-import { Button, Col, Form, Row } from 'react-bootstrap';
 import { Fragment, MouseEventHandler } from 'react';
-import { Review } from 'utils/types';
-import RatingStars from 'components/common/RatingStars/RatingStars';
+import { Button, Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import ButtonGroup from 'components/common/ButtonGroup/ButtonGroup';
+import RatingStars from 'components/common/RatingStars/RatingStars';
+import { Review } from 'utils/types';
 
 type ReviewDetailsProps = {
     review: Review | undefined;
-    onDelete: MouseEventHandler;
-    onEdit: MouseEventHandler;
     onAdd: MouseEventHandler;
+    onEdit: MouseEventHandler;
+    onDelete: MouseEventHandler;
 };
 
 const ReviewDetails = ({ review, onDelete, onEdit, onAdd }: ReviewDetailsProps) => {
-
     const { t } = useTranslation();
 
     let infoContent = null;
