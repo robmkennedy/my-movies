@@ -7,7 +7,6 @@ type SearchBarProps = {
 };
 
 const SearchBar = ({ onSearch }: SearchBarProps) => {
-
     const { t } = useTranslation();
     const [inputValue, setInputValue] = useState('');
 

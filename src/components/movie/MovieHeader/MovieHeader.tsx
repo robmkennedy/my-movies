@@ -1,17 +1,13 @@
-import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector, useReviewItemsSelector, useSearchValueSelector } from 'hooks/selectorHooks';
-import ErrorBox from 'components/common/ErrorBox/ErrorBox';
-import LoadingBox from 'components/common/LoadingBox/LoadingBox';
-import MessageBox from 'components/common/MessageBox/MessageBox';
 import { Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import PageTitle from 'components/common/PageTitle/PageTitle';
-import { useAppDispatch } from 'hooks/stateHooks';
-import { addedToHistory, deletedFromHistory, updatedInHistory } from 'state/slices/historySlice';
-
-import './MovieHeader.scss';
-import { Movie } from 'utils/types';
-import { deletedFromReviews } from 'state/slices/reviewSlice';
 import PageHeader from 'components/common/PageHeader/PageHeader';
+import { useAppDispatch } from 'hooks/stateHooks';
+import { useHistoryItemsSelector } from 'hooks/selectorHooks';
+import { addedToHistory, deletedFromHistory } from 'state/slices/historySlice';
+import { deletedFromReviews } from 'state/slices/reviewSlice';
+import { Movie } from 'utils/types';
+import './MovieHeader.scss';
 
 type MovieHeaderProps = {
     movie: Movie;

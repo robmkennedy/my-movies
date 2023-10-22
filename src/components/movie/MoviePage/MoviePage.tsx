@@ -1,25 +1,20 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from 'components/common/PageTitle/PageTitle';
-import { useTranslation } from 'react-i18next';
-import { LayoutState } from 'utils/types';
-import MessageBox from 'components/common/MessageBox/MessageBox';
+import { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-import { useGetMovieByIdQuery } from 'state/slices/movieApiSlice';
+import { useTranslation } from 'react-i18next';
+import { Col, Container, Row } from 'react-bootstrap';
 import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MovieDetails from 'components/movie/MovieDetails/MovieDetails';
-import { Fragment } from 'react';
 import MovieHeader from 'components/movie/MovieHeader/MovieHeader';
-import { useHistoryItemsSelector } from 'hooks/selectorHooks';
 import MovieReview from 'components/movie/MovieReview/MovieReview';
+import { useGetMovieByIdQuery } from 'state/slices/movieApiSlice';
 
 const MoviePage = () => {
-
     const { t } = useTranslation();
 
     const { imdbID } = useParams();
 
-      const { data, error, isLoading } = useGetMovieByIdQuery(imdbID);
+    const { data, error, isLoading } = useGetMovieByIdQuery(imdbID);
 
     let content = <LoadingBox message={t('page.movie.loading')} />
 

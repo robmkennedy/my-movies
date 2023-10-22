@@ -3,7 +3,6 @@ import SearchResults from 'components/search/SearchResults/SearchResults';
 import { useLazyGetMovieByNameQuery } from 'state/slices/movieApiSlice';
 
 const SearchPanel = () => {
-
     const [fetchTrigger, { data, error, isFetching }] = useLazyGetMovieByNameQuery();
 
     const handleSearch = (searchValue: string) => {

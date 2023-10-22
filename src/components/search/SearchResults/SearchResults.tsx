@@ -1,13 +1,11 @@
 import { useTranslation } from 'react-i18next';
+import { SerializedError } from '@reduxjs/toolkit';
+import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
 import ErrorBox from 'components/common/ErrorBox/ErrorBox';
 import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import MessageBox from 'components/common/MessageBox/MessageBox';
-import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
-import { SerializedError } from '@reduxjs/toolkit';
 import MovieDetails from 'components/movie/MovieDetails/MovieDetails';
-import { Fragment } from 'react';
 import SearchButtons from '../SearchButtons/SearchButtons';
-import { Col, Row } from 'react-bootstrap';
 import { Movie } from 'utils/types';
 
 type SearchResultsProps = {
@@ -17,7 +15,6 @@ type SearchResultsProps = {
 };
 
 const SearchResults = ({ data, error, isFetching }: SearchResultsProps) => {
-
     const { t } = useTranslation();
 
     let content = <MessageBox message={t('page.search.results.request')} />;

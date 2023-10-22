@@ -6,8 +6,8 @@ type LoadingBoxProps = {
 };
 
 const LoadingBox = ({ message }: LoadingBoxProps) => {
-
     const { t } = useTranslation();
+    
     const displayMessage = message || t('common.loading');
 
     return (

@@ -1,9 +1,9 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector } from 'hooks/selectorHooks';
+import { Container, Row, Col } from 'react-bootstrap';
 import { getMostOccurrences } from 'utils/helpers';
+import { useHistoryItemsSelector } from 'hooks/selectorHooks';
 import RecommendationChart from 'components/recommendation/RecommendationChart/RecommendationChart';
+import PageTitle from 'components/common/PageTitle/PageTitle';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import PageHeader from 'components/common/PageHeader/PageHeader';
 

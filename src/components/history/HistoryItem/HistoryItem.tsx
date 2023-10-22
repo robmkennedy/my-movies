@@ -1,19 +1,14 @@
-import { useTranslation } from 'react-i18next';
-import './HistoryItem.scss';
-import { Movie } from 'utils/types';
-import { useReviewItemsSelector } from 'hooks/selectorHooks';
 import RatingStars from 'components/common/RatingStars/RatingStars';
+import { useReviewItemsSelector } from 'hooks/selectorHooks';
+import { Movie } from 'utils/types';
+import './HistoryItem.scss';
 
 type HistoryItemProps = {
     movie: Movie;
 }
 
 const HistoryItem = ({ movie }: HistoryItemProps) => {
-
-    const { t } = useTranslation();
     const reviewItems = useReviewItemsSelector();
-
-
     const existingReview = reviewItems[movie.imdbID];
     const rating = existingReview ? existingReview.rating : 'none';
 

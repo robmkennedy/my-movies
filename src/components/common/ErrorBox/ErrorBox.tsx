@@ -6,8 +6,8 @@ type ErrorBoxProps = {
 };
 
 const ErrorBox = ({ message }: ErrorBoxProps) => {
-
     const { t } = useTranslation();
+    
     const displayMessage = message || t('common.error');
 
     return (

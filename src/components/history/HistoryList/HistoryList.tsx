@@ -1,8 +1,4 @@
 import { Fragment } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useHistoryItemsSelector } from 'hooks/selectorHooks';
-import LoadingBox from 'components/common/LoadingBox/LoadingBox';
-import MessageBox from 'components/common/MessageBox/MessageBox';
 import HistoryItem from 'components/history/HistoryItem/HistoryItem';
 import './HistoryList.scss';
 

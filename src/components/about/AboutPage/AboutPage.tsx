@@ -1,19 +1,15 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import PageTitle from 'components/common/PageTitle/PageTitle';
+import ReactMarkdown from 'react-markdown';
 import { useTranslation } from 'react-i18next';
+import { Col, Container, Row } from 'react-bootstrap';
+
+import ErrorBox from 'components/common/ErrorBox/ErrorBox';
+import PageTitle from 'components/common/PageTitle/PageTitle';
+import LoadingBox from 'components/common/LoadingBox/LoadingBox';
 import PageHeader from 'components/common/PageHeader/PageHeader';
 import { useGetAboutContentQuery } from 'state/slices/aboutApiSlice';
-import ErrorBox from 'components/common/ErrorBox/ErrorBox';
-import LoadingBox from 'components/common/LoadingBox/LoadingBox';
-import MovieDetails from 'components/movie/MovieDetails/MovieDetails';
-import MovieHeader from 'components/movie/MovieHeader/MovieHeader';
-import MovieReview from 'components/movie/MovieReview/MovieReview';
-import { Fragment } from 'react';
-import ReactMarkdown from 'react-markdown';
 import './AboutPage.scss';
 
 const AboutPage = () => {
-
     const { t } = useTranslation();
 
     const { data, error, isLoading } = useGetAboutContentQuery('');
