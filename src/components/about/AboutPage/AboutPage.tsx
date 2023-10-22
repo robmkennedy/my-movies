@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useTranslation } from 'react-i18next';
+import PageHeader from 'components/common/PageHeader/PageHeader';
 
 const AboutPage = () => {
 
@@ -11,7 +12,9 @@ const AboutPage = () => {
             <Container>
                 <Row>
                     <Col>
-                        <PageTitle title={t('page.about.title')} />
+                        <PageHeader>
+                            <PageTitle title={t('page.about.title')} />
+                        </PageHeader>
                         <div></div>
                     </Col>
                 </Row>

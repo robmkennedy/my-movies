@@ -1,10 +1,14 @@
+@use 'src/styles/colors';
 @use 'src/styles/variables';
 
 $rk-poster-width: 150px;
 
 .rk-history-item {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
 
     .rk-history-item-title {
         font-weight: variables.$rk-font-light;
@@ -13,5 +17,9 @@ $rk-poster-width: 150px;
     img {
         width: $rk-poster-width;
         margin-bottom: 10px;
+    }
+
+    &:hover {
+        border-color: colors.$rk-link;
     }
 }

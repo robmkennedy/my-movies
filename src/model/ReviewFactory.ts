@@ -6,7 +6,7 @@ export default class ReviewFactory {
 
         const review: Review = {
             imdbID: imdbID,
-            rating: response ? response.rating : '',
+            rating: response ? response.rating : 'average',
             comment: response ? response.comment : ''
         };
 

@@ -21,9 +21,9 @@ const RecommendationChart = ({ type, title, description, occurrencesMap }: Recom
 
     return (
         <section className='rk-recommendation-chart'>
-            <h3 className='rk-recommendation-chart-title'>{title} <span>{countArray[0][0]}</span></h3>
-            <h5 className='rk-recommendation-chart-description'>{description}</h5>
-            <Table striped bordered hover>
+            <h4 className='rk-recommendation-chart-title'>{title} <span>{countArray[0][0]}</span></h4>
+            <h6 className='rk-recommendation-chart-description'>{description}</h6>
+            <Table>
                 <thead>
                     <tr>
                         <th>{type}</th>

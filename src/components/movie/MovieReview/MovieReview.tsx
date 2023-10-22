@@ -65,7 +65,6 @@ const MovieReview = ({ movie }: MovieReviewProps) => {
 
     return (
         <section className='rk-movie-review'>
-            <div className='rk-review-title'>{t('page.movie.review.title')}</div>
             <div className='rk-review-content'>
                 {content}
             </div>

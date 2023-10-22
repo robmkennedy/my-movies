@@ -1,3 +1,5 @@
+@use 'src/styles/colors';
+
 .rk-movie-details {
     display: flex;
 
@@ -6,7 +8,7 @@
         margin-bottom: 10px;
 
         .rk-movie-label {
-            color: red;
+            color: colors.$rk-highlight;
         }
     }
 }

@@ -13,7 +13,7 @@ const SearchButtons = ({ movie }: SearchButtonsProps) => {
 
     return (
         <section className='rk-search-buttons'>
-            <NavLink to={`/movie/${movie.imdbID}`}><Button>{t('page.search.buttons.review')}</Button></NavLink>
+            <NavLink to={`/movie/${movie.imdbID}`}><Button variant='outline-primary'>{t('page.search.buttons.review')}</Button></NavLink>
         </section>
     );
 }

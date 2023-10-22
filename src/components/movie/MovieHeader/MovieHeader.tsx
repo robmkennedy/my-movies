@@ -36,10 +36,10 @@ const MovieHeader = ({ movie }: MovieHeaderProps) => {
 
     let buttonContent = null;
     if (existingMovie) {
-        buttonContent = <Button onClick={handleRemoveClick}>{t('page.movie.buttons.remove')}</Button>;
+        buttonContent = <Button variant='outline-danger' onClick={handleRemoveClick}>{t('page.movie.buttons.remove')}</Button>;
     }
     else {
-        buttonContent = <Button onClick={handleAddClick}>{t('page.movie.buttons.add')}</Button>
+        buttonContent = <Button variant='outline-primary' onClick={handleAddClick}>{t('page.movie.buttons.add')}</Button>
     }
 
     return (
