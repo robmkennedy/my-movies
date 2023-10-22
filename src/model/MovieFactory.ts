@@ -41,7 +41,7 @@ export default class MovieFactory {
         if (Array.isArray(json.Ratings)) {
             json.Ratings.forEach(({ Source, Value }) => {
                 switch (Source) {
-                    case 'Internet MovieFactory Database':
+                    case 'Internet Movie Database':
                         movie.imdbRating = Value;
                         break;
                     case 'Rotten Tomatoes':

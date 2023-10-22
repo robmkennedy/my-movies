@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PageTitle from 'components/common/PageTitle/PageTitle';
 import { useTranslation } from 'react-i18next';
 import PageHeader from 'components/common/PageHeader/PageHeader';
+import AboutMarkdown from 'components/about/AboutMarkdown/AboutMarkdown';
 
 const AboutPage = () => {
 
@@ -15,7 +16,7 @@ const AboutPage = () => {
                         <PageHeader>
                             <PageTitle title={t('page.about.title')} />
                         </PageHeader>
-                        <div></div>
+                        <AboutMarkdown/>
                     </Col>
                 </Row>
             </Container>

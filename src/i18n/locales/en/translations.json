@@ -33,7 +33,7 @@
     "page.movie.review.select.rating": "Select Rating",
     "page.movie.review.enter.comments": "Enter Comments",
     "page.movie.review.comments.here": "Enter comments here",
-    "page.movie.review.none": "There is no review for this movie. Click the Add button to create a new review.",
+    "page.movie.review.none": "You have not reviewed this movie yet. Click the Add button to create a new review.",
     "page.movie.none.selected": "No movie has been currently selected. To review a movie, search for it's title from the Search page.",
 
     "page.recommendations.title": "Recommendations",
@@ -63,5 +63,8 @@
 
     "common.error": "An error has occurred. Please reload the application and try again.",
     "common.search": "Search",
-    "common.loading": "Loading"
+    "common.loading": "Loading",
+    "common.imdb": "IMDb",
+    "common.metacritic": "Metacritic",
+    "common.tomatoes": "Rotten Tomatoes"
 }

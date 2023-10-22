@@ -44,6 +44,24 @@ const MovieDetails = ({ movie }: MovieDetailsProps) => {
                             <div className='rk-movie-label'>{t('movie.details.actors')}</div>
                             <div className='rk-movie-text'>{buildString(movie.actors)}</div>
                         </div>
+                        {movie.imdbRating &&
+                            <div className='rk-movie-item'>
+                                <div className='rk-movie-label'>{t('common.imdb')}</div>
+                                <div className='rk-movie-text'>{movie.imdbRating}</div>
+                            </div>
+                        }
+                        {movie.metacriticRating &&
+                            <div className='rk-movie-item'>
+                                <div className='rk-movie-label'>{t('common.metacritic')}</div>
+                                <div className='rk-movie-text'>{movie.metacriticRating}</div>
+                            </div>
+                        }
+                        {movie.tomatoRating &&
+                            <div className='rk-movie-item'>
+                                <div className='rk-movie-label'>{t('common.tomatoes')}</div>
+                                <div className='rk-movie-text'>{movie.tomatoRating}</div>
+                            </div>
+                        }
                     </div>
                 </Col>
                 <Col>
