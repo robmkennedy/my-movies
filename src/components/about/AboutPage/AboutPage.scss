@@ -1,9 +1,20 @@
+@use 'src/styles/colors';
 @use 'src/styles/variables';
 
 .rk-about-content {
 
-    h2, h3, p, li {
+    h2,
+    h3,
+    h4,
+    p,
+    li {
         font-weight: variables.$rk-font-light;
+    }
+
+    h2,
+    h3,
+    h4 {
+        color: colors.$rk-secondary;
     }
 
     ul {

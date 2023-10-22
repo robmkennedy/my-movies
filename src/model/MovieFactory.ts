@@ -3,7 +3,7 @@ import { Movie, MovieResponse } from "utils/types";
 export default class MovieFactory {
 
     static buildValue = (jsonValue: string) => {
-        return (!jsonValue || jsonValue.toUpperCase() == 'N/A' ? '' : jsonValue);
+        return (!jsonValue || jsonValue.toUpperCase() === 'N/A' ? '' : jsonValue);
     };
 
     static buildArray = (jsonValue: string) => {

@@ -8,9 +8,9 @@ import RecommendationsPage from 'components/recommendation/RecommendationsPage/R
 
 const routes = new Map<RouteID, RouteConfig>();
 
+routes.set(RouteID.SEARCH, { path: '/search', component: SearchPage });
 routes.set(RouteID.ABOUT, { path: '/about', component: AboutPage });
 routes.set(RouteID.MOVIE, { path: '/movie/:imdbID', component: MoviePage });
-routes.set(RouteID.SEARCH, { path: '/search', component: SearchPage });
 routes.set(RouteID.HISTORY, { path: '/history', component: HistoryPage });
 routes.set(RouteID.RECOMMENDATIONS, { path: '/recommendations', component: RecommendationsPage });
 

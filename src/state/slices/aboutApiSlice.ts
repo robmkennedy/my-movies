@@ -14,7 +14,7 @@ export const aboutApiSlice = createApi({
 
         getAboutContent: builder.query({
             query: () => ({
-                url: `/about.md`,
+                url: `/info.md`,
                 responseHandler: 'text'
             })
         })
