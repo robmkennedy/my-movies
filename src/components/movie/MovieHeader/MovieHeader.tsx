@@ -13,6 +13,13 @@ type MovieHeaderProps = {
     movie: Movie;
 };
 
+/**
+ * A component used for the header of the Movie page. Unlike the other pages
+ * that just have a title, the MoviePage header also contains the buttons used to 
+ * add / delete the movie from the viewing history.
+ * Note in the handleRemoveClick, if the user deletes the movie from the viewing history,
+ * then the corresponding review is also deleted from local storage.
+ */
 const MovieHeader = ({ movie }: MovieHeaderProps) => {
 
     const { t } = useTranslation();

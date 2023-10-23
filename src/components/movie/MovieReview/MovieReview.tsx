@@ -13,6 +13,12 @@ type MovieReviewProps = {
     movie: Movie;
 };
 
+/**
+ * A component used to display / edit the user review for a movie. 
+ * It uses the unique imdb ID from the movie property and retrieves the corresponding review
+ * from the local storage. Depending on whether the user is editing the review or just viewing it, 
+ * different Review Editor / Details child components will be rendered.
+ */
 const MovieReview = ({ movie }: MovieReviewProps) => {
     const dispatch = useAppDispatch();
 

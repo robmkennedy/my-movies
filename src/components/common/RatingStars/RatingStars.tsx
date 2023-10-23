@@ -8,6 +8,11 @@ type RatingStarsProps = {
 
 const starCounts: { [index: string]: number } = { 'none': 0, 'terrible': 1, 'poor': 2, 'average': 3, 'good': 4, 'excellent': 5 };
 
+/**
+ * A component used to show a five-star review rating.
+ * A boolean property determines whether to also show text representing the rating. 
+ * For efficiency, the stars are created via CSS, not with SVGs.
+ */
 const RatingStars = ({ rating, showText = true }: RatingStarsProps) => {
     const { t } = useTranslation();
 

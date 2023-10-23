@@ -12,6 +12,10 @@ type ReviewDetailsProps = {
     onDelete: MouseEventHandler;
 };
 
+/**
+ * A component that displays the rating and comment of a review. It provides Delete and Edit
+ * options for the review. The rating is represented by the RatingStars component.
+ */
 const ReviewDetails = ({ review, onDelete, onEdit, onAdd }: ReviewDetailsProps) => {
     const { t } = useTranslation();
 

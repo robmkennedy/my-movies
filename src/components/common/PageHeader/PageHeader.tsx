@@ -5,6 +5,10 @@ type PageHeaderProps = {
     children: ReactNode;
 };
 
+/**
+ * All pages have a similar headers. This component provides 
+ * common functionality to allow all page headers to be the same.
+ */
 const PageHeader = ({ children }: PageHeaderProps) => {
 
     return (

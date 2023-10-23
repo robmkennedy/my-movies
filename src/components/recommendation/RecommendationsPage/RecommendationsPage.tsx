@@ -7,6 +7,15 @@ import PageTitle from 'components/common/PageTitle/PageTitle';
 import MessageBox from 'components/common/MessageBox/MessageBox';
 import PageHeader from 'components/common/PageHeader/PageHeader';
 
+/**
+ * A component that shows recommendations to the user based on actor and genre.
+ * Due to limitations, of the API, it is not possible to query using actor or genre.
+ * Therefore we can use the Recommendation page to display charts of the most popular actors
+ * and genres that the user has watched. This is based on the users viewing history in the
+ * local storage.
+ * As both sets of data are displayed in the same structure, a common Chart component is used 
+ * for both actor data and genre data.
+ */
 const RecommendationsPage = () => {
     const { t } = useTranslation();
 

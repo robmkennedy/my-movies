@@ -1,46 +1,39 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Movies
+This is a simple Single-Page Application which allows a user to review movies and keep track of their watch history. It also provides recommendations to the user based on the actors and genres of the movies they have already watched.
 
-## Available Scripts
+## Starting the app
+After cloning the repo, from the project directory, run `npm start`.
+This will run the app in development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in a browser.
 
-In the project directory, you can run:
+## Sample user flow
+1. Start on the Search page.
+2. Enter the title of a movie (the search term must match the title exactly) then click the **Search** button.
+3. View the movie details at the bottom of the page.
+4. Click the **Review This Movie** button.
+5. From the movie page, click the **Add My Review** button.
+6. Select a rating for the review.
+7. Enter a comment into the text area.
+8. Click the **Save My Review** button.
+9. Click on the **Viewing History** link in the header.
+10. The movie and review will appear in the viewing history.
 
-### `npm start`
+## Detailed information
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- To help show the app operations, a list of movies and dummy reviews are automatically loaded into local storage on startup.
+- Detailed information about the creation of the app can be found the **About This App** page from the header menu of the app itself. This information it also contained in the markdown file [here](public/info.md).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Screens
+### Search Page
+![Search Page 1](public/screens/search-1.png)
+### Search Page Result
+![Search Page 2](public/screens/search-2.png)
+### Movie Page
+![Movie Page 1](public/screens/movie-1.png)
+### Viewing History Page
+![Viewing History 1](public/screens/history-1.png)
+### Recommendation Page
+![Recommendation Page 1](public/screens/recommendations-1.png)
+### About Page
+![About Page 1](public/screens/about-1.png)

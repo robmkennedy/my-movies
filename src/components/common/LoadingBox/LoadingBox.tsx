@@ -5,6 +5,10 @@ type LoadingBoxProps = {
     message?: string
 };
 
+/**
+ * A component used to display a loading message to the user.
+ * If no specific message prop is supplied, a default loading message is used.
+ */
 const LoadingBox = ({ message }: LoadingBoxProps) => {
     const { t } = useTranslation();
     

@@ -4,6 +4,11 @@ import PageTitle from 'components/common/PageTitle/PageTitle';
 import PageHeader from 'components/common/PageHeader/PageHeader';
 import HistoryPanel from 'components/history/HistoryPanel/HistoryPanel';
 
+/**
+ * This page displays a list of the movies the user has already watched.
+ * They will be displayed using the poster thumbnails, and have the user star review
+ * beneath each (if it exists).
+ */
 const HistoryPage = () => {
     const { t } = useTranslation();
 

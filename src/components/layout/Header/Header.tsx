@@ -10,6 +10,12 @@ import { RouteID } from 'utils/types';
 import routes from 'utils/routes';
 import './Header.scss';
 
+/**
+ * The header of the entire application. It utilizes the NAvbar that is provided 
+ * by react-bootstrap. This handled responsiveness and collapsing the nav menu in mobile view.
+ * Each link in the header is a NavLink, which uses react-router NavLinks 
+ * to route to the correct page.
+ */
 const Header = () => {
     const { t } = useTranslation();
 
@@ -22,6 +28,7 @@ const Header = () => {
         dispatch(sidePanelClosed());
     }, [dispatch, location]);
 
+    // Open / close the sidebar
     const handleToggle = () => {
         dispatch(sidePanelToggled());
     };

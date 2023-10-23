@@ -6,8 +6,11 @@ type HistoryListProps = {
     history: Object
 }
 
+/**
+ * A component that generates a list of history items.
+ * It uses responsive grid layout to lay out the movies left-to-right, top-to-bottom.
+ */
 const HistoryList = ({ history }: HistoryListProps) => {
-
     let movieArray = [...Object.values(history)];
 
     let content = (

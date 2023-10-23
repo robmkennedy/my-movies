@@ -9,6 +9,12 @@ type RecommendationChartProps = {
     occurrencesMap: Map<string, number>
 };
 
+/**
+ * A component used to display the most popular actor / genre. It uses an array of string 
+ * arrays which contain the actors / genres. It searches through the arrays and counts the number
+ * of occurrences of each unique actor / genre. The most popular is displayed in a message,
+ * while the rest (top 5) are shown in a table.
+ */
 const RecommendationChart = ({ type, title, description, occurrencesMap }: RecommendationChartProps) => {
     const { t } = useTranslation();
 

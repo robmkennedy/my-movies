@@ -6,6 +6,11 @@ type SearchBarProps = {
     onSearch: Function
 };
 
+/**
+ * An input group component used to provide a search bar for the user. The onSearch property
+ * is an event handler that is called with the string search value when the Search button
+ * is clicked.
+ */
 const SearchBar = ({ onSearch }: SearchBarProps) => {
     const { t } = useTranslation();
     const [inputValue, setInputValue] = useState('');

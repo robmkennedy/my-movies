@@ -10,6 +10,10 @@ type ReviewEditorProps = {
     review: Review | undefined;
 };
 
+/**
+ * A component used to edit a review. It provides a select input to choose the rating 
+ * level, and a text area to allow the user to enter a comments.
+ */
 const ReviewEditor = ({ review, onCancel, onSave }: ReviewEditorProps) => {
     const { t } = useTranslation();
 

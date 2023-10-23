@@ -3,12 +3,11 @@ import routes from 'utils/routes';
 import './MainPanel.scss';
 
 /**
- * The MainPanel is the main area of the application displayed beneath the header. 
+ * This is the main area of the application displayed beneath the header. 
  * Every time the route changes, a corresponding Page is loaded into this panel
  * The available routes and their Component pages are listed in the routes utility.
  * The final route will be used to replace any invalid url paths that the user may enter.
  * It defaults to the first route in the array (in this case - the search page)
- * @returns 
  */
 const MainPanel = () => {
 

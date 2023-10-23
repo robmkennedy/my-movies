@@ -7,6 +7,12 @@ type SearchButtonsProps = {
     movie: Movie
 };
 
+/**
+ * A simple component used to wrap the buttons that are available when a movie is
+ * found on the Search page. In this case, a Nav Link is used, which uses the unique
+ * imdb ID to specify the route to open the Movie Page. The Movie Page can then access this ID
+ * to detect review details.
+ */
 const SearchButtons = ({ movie }: SearchButtonsProps) => {
     const { t } = useTranslation();
 

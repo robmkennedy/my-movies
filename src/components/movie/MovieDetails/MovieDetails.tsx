@@ -6,6 +6,15 @@ type MovieDetailsProps = {
     movie: Movie;
 };
 
+/**
+ * A component used to show detailed information about a movie. This can be used
+ * in the Movie page and also on the Search page.
+ * In mobile view, the poster is beneath the movie data and aligned to the center.
+ * Responsive flex bootstrap classes are used to re-order the poster and pull it
+ * to the left when the viewport expands beyond the md size.
+ * Some movies don't have all three ratings (imdb/metacritic/tomatoes) therefore these
+ * sections are shown conditionally.
+ */
 const MovieDetails = ({ movie }: MovieDetailsProps) => {
 
     const { t } = useTranslation();

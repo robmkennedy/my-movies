@@ -6,6 +6,9 @@ type NavLinkProps = {
     label: string;
 };
 
+/**
+ * A wrapper for the nav-link provided by react-router.
+ */
 const NavLink = ({ path, label }: NavLinkProps) => {
 
     return (

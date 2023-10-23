@@ -6,6 +6,9 @@ import SearchPage from 'components/search/SearchPage/SearchPage';
 import HistoryPage from 'components/history/HistoryPage/HistoryPage';
 import RecommendationsPage from 'components/recommendation/RecommendationsPage/RecommendationsPage';
 
+/**
+ * Maintain a map of routes used throughout the app. Each route is referenced by the RouteID enum.
+ */
 const routes = new Map<RouteID, RouteConfig>();
 
 routes.set(RouteID.SEARCH, { path: '/search', component: SearchPage });

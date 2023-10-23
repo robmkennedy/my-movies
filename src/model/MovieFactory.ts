@@ -1,5 +1,12 @@
 import { Movie, MovieResponse } from "utils/types";
 
+/**
+ * A class used to parse the response from the OMDB api and build a Movie object that
+ * we can use through the app. This allows us to supply any default values we need, in case
+ * any parameters are missing. The API returns a successful response, even if the movie
+ * is not found. Therefore we use the Error parameter in the response, and set this to the
+ * "found" boolean in our Movie object.
+ */
 export default class MovieFactory {
 
     static buildValue = (jsonValue: string) => {

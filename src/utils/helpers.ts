@@ -1,8 +1,6 @@
 /**
- * 
- * @param callback 
- * @param delay 
- * @returns 
+ * Used to throttle a function. The supplied callback function will only be called
+ * after a delay of the specified number (default 250).
  */
 export const throttle = (callback: Function, delay: number = 250) => {
     let shouldWait = false;
@@ -23,7 +21,8 @@ export const throttle = (callback: Function, delay: number = 250) => {
 }
 
 /**
- * Use an array of String arrays. Calculate the frequency of the strings and return result in Map.
+ * Supply an array of String arrays. 
+ * Calculate the frequency of the string values and return result in Map.
  */
 export const getMostOccurrences = (lists: string[][]) => {
 

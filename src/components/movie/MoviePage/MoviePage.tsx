@@ -9,6 +9,13 @@ import MovieHeader from 'components/movie/MovieHeader/MovieHeader';
 import MovieReview from 'components/movie/MovieReview/MovieReview';
 import { useGetMovieByIdQuery } from 'state/slices/movieApiSlice';
 
+/**
+ * A page used to show details for a single movie.
+ * It provides controls for adding / deleting the movie to the viewing history.
+ * It also provides a form input that allows the user to enter their own review.
+ * This uses RTK Query to returned the movie via the API, therefore it requires
+ * loading and error components during the loading/error states.
+ */
 const MoviePage = () => {
     const { t } = useTranslation();
 
