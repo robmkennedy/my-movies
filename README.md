@@ -3,7 +3,7 @@
 This is a simple Single-Page Application which allows a user to review movies and keep track of their watch history. It also provides recommendations to the user based on the actors and genres of the movies they have already watched.
 
 ## Starting the app
-After cloning the repo, from the project directory, run `npm start`.
+After cloning the repo, from the **my-movies** directory, run `npm install` and then `npm start`.
 This will run the app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in a browser.
 
